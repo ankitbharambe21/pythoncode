@@ -1,0 +1,15 @@
+import turtle
+t = turtle.Turtle()
+screen = turtle.Screen()
+screen.bgcolor("black")
+t.speed(0)
+screen.setup(900,900)
+col = ("red","green","yellow","orange","purple")
+for a in range(500):
+    t.pencolor(col[a%5])
+    t.width(1)
+    t.forward(a)
+    t.right(100)
+    t.forward(a*2)
+    t.right(100)
+t.hideturle()
